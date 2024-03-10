@@ -86,6 +86,6 @@ public class ComplexNumber implements iCalculator {
      */
     @Override
     public ComplexNumber getResult() {
-        return new ComplexNumber(realPart, imaginaryPart);        
+        return new ComplexNumber(this.realPart, this.imaginaryPart);        
     }
 }

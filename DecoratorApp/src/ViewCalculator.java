@@ -14,12 +14,13 @@ public class ViewCalculator {
         while (true) {
             ComplexNumber num1 = new ComplexNumber(promptInt("Введите вещественную часть первого числа: "),promptInt("Введите мнимую часть первого числа: "));
             calculator.summation(num1);
-            //ComplexNumber num2 = new ComplexNumber(promptInt("Введите вещественную часть второго аргумента: "),promptInt("Введите мнимую часть второго аргумента: "));
+            
                         
             while (true) {
                 String cmd = prompt("Введите команду (+, *, /, =) : ");
                 if (cmd.equals("+")) {                    
-                    
+                    ComplexNumber num2 = new ComplexNumber(promptInt("Введите вещественную часть второго аргумента: "),promptInt("Введите мнимую часть второго аргумента: "));
+                    calculator.summation(num2);
                     continue;
                 }
                 if (cmd.equals("*")) { 
