@@ -14,7 +14,7 @@ public class Decorator implements iCalculator {
     @Override
     public iCalculator summation(ComplexNumber otherNumber) {
         ComplexNumber firstNumber = a.getResult();
-        b.log("Первое значение калькулятора " + firstNumber + ". Вызов метода summation с числом " + otherNumber);
+        b.log("Первое значение калькулятора " + otherNumber + ". Вызов метода summation с числом " + otherNumber);
         iCalculator result = a.summation(otherNumber);
         b.log(String.format("Вызов метода summation произошел"));
         return result;

@@ -4,18 +4,12 @@
  */
 public final class CalculatorComplexNumber implements iCalculator {
     private ComplexNumber num;
-    int a,b;
-
-
-
+    
     public CalculatorComplexNumber(ComplexNumber num) {
         this.num = num;
     }
   
-    public ComplexNumber setComplexNumber(int a, int b){
-        return new ComplexNumber(a, b);
-    }
-
+    
     /**
      * Метод сложения комплексных чисел
      *
